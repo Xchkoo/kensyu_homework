@@ -1,0 +1,31 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+table thead {
+    color:#fff;
+}
+
+table th {
+    background:linear-gradient(90deg,#2563eb,#0ea5e9);
+}
+
+table th, table td {
+    padding:16px;
+    text-align:left;
+}
+
+.grey-background {
+    background:#f1f5f9;
+}
+
+.highlight {
+    background-color: #dff3fe;
+}
+
+.score-high{color:#16a34a;font-weight:600;}
+.score-mid{color:#2563eb;font-weight:600;}
+.score-low{color:#ea580c;font-weight:600;}
