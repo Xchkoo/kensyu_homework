@@ -1,0 +1,18 @@
+body{
+    background:#f2f2f2;
+    font-family:Arial;
+}
+
+.box{
+    border-collapse: collapse;
+    margin:40px auto;
+    width:800px;
+    height:800px;
+    border:6px double #666;
+}
+
+.box td{
+    border:2px solid #666;
+    font-size:50px;
+    padding:30px;
+}

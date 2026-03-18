@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>语义化标签展示页</title>
+    </head>
+    <body class="card">
+        <header class="card">
+            <h1>语义化标签展示页</h1>
+            <p>本页演示常见HTML语义化结构</p>
+            <nav aria-label="主导航">
+                <a href="#article">文章</a>
+                <a href="#secion">章节</a>
+                <a href="#aside">侧栏</a>
+            </nav>
+        </header>
+
+        <main class="layout">
+            <article id="article" class="card">
+                <section>
+                    <h3>列表与强调</h3>
+                    <ul>
+                        <li><strong>strong</strong>:强调重要性</li>
+                        <li><em>em</em>:强调语气</li>
+                        <li><mark>mark</mark>:高亮文本</li>
+                    </ul>
+                </section>
+
+                <footer>
+                    <p>标签示例：<code>header</code>、<code>main</code>、<code>article</code>、<code>section</code>、<code>footer</code></p>
+                </footer>
+            </article>
+
+            <aside id="aside" class="card" aria-label="补充信息">
+                <h2>aside：侧边补充信息</h2>
+                <p>这里通常放目录、广告、作者信息、推荐阅读等</p>
+                <address>
+                    作者：前端课程组<br>
+                    邮箱：teacher@example.com
+                </address>
+            </aside>
+        </main>
+    </body>
+</html>

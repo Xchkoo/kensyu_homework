@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="jp">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>作业1</title>
+        <link rel="stylesheet" href="homework1_form.css">
+    </head>
+    <body>
+        <form action="">
+            <table>
+                <thead>
+                    <tr>
+                        <th>入力項目</th>
+                        <th>入力内容</th>
+                        <th>入力方法</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>氏名（ローマ字）</td>
+                        <td><input type="text" name="name" placeholder="例：LI WENWEN"></td>
+                        <td>半角英字大文字、33文字以内</td>
+                    </tr>
+                    <tr>
+                        <td>氏名（カタカナ）</td>
+                        <td><input type="text" name="kana" placeholder="例：リ　ベンベン"></td>
+                        <td>カタカナ、33文字以内</td>
+                    </tr>
+                    <tr>
+                        <td>性別</td>
+                        <td>
+                            <label>
+                                <input type="radio" name="gender" value="male"> 男性
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="female"> 女性
+                            </label>
+                        </td>
+                        <td>男性／女性</td>
+                    </tr>
+                    <tr>
+                        <td>生年月日</td>
+                        <td>
+                            <select>
+                                <option>年</option>
+                                <option>1990</option>
+                            </select>
+
+                            <select>
+                                <option>月</option>
+                                <option>1</option>
+                            </select>
+
+                            <select>
+                                <option>日</option>
+                                <option>1</option>
+                            </select>
+                            <br>
+                            <input type="checkbox"><label>16歳以上です</label>
+                            <br>
+                            <input type="checkbox"><label>16歳未満ですが、保護者の同意を得ています</label>
+                        </td>
+                        <td>16歳以上／16歳未満、保護者の同意が必要</td>
+                    </tr>
+                    <tr>
+                        <td>邮编番号</td>
+                        <td>
+                        <input type="text" name="postal" placeholder="郵便番号を入力してください">
+                        </td>
+                        <td>半角数字（3桁~4桁）</td>
+                    </tr>
+                    <tr>
+                        <td>郵便番号</td>
+
+                        <td>
+                            <select>
+                                <option>都道府県を選択してください</option>
+                                <option>东京</option>
+                                <option>大阪</option>
+                            </select>
+                        </td>
+
+                        <td>都道府県を選択してください</td>
+                    </tr>
+                    <tr>
+                        <td>住所</td>
+                        <td><input type="text" name="address" placeholder="例：目黒区駒場4-5-29"></td>
+                        <td>市区町村から番地まで正しく入力してください</td>
+                    </tr>
+                    <tr>
+                        <td>電話番号（日本国内）</td>
+                        <td><input type="text" name="phone" placeholder="0354545215"></td>
+                        <td>半角数字・(-)ハイフンなし</td>
+                    </tr>
+                    <tr>
+                        <td>メールアドレス</td>
+                        <td>
+                            <input type="email" name="email" placeholder="trip7@emample.com"><br>
+                            <input type="email" name="email" placeholder="trip7@emample.com">
+                        </td>
+                        <td>半角英数字128文字以内</td>
+                    </tr>
+                    <tr>
+                        <td>パスワード</td>
+                        <td>
+                            <input type="password" name="password" placeholder="半角英数字8文字以上"><br>
+                            <input type="password" name="password" placeholder="半角英数字8文字以上">
+                        </td>
+                        <td>
+                            ・半角英数字8文字以上16文字以内
+                            <br>
+                            ・英大文字・英小文字・数字をそれぞれ1文字以上含める必要があります。
+                            <br>
+                            ・パスワードを忘れないようにいしてください。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>技術スタック</td>
+                        <td>
+                            <input type="checkbox" ><label>Java</label>
+                            <input type="checkbox" ><label>CSS</label>
+                            <input type="checkbox" ><label>HTML</label>
+                        </td>
+                        <td>
+                            得意な技術スタックを選択してください
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>写真アップロード</td>
+                        <td>
+                            <input type="file" name="photo" accept="image/*">
+                        </td>
+                        <td>
+                            写真をアップロードしてください
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="送信" class="submit-btn"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>

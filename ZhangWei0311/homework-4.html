@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>作业4</title>
+        <link rel="stylesheet" href="homework-4.css">
+    </head>
+    <body>
+        <form method="post" action="#">
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name" placeholder="请输入姓名" required><br><br>
+
+            <label for="phone-number">手机号：</label>
+            <input type="tel" id="phone-number" name="phone-number" placeholder="请输入手机号" required><br><br>
+            <div>
+                <label>性别</label>
+                <label><input class="select" type="radio" name="gender" value="男" checked>男</label>
+                <label><input class="select" type="radio" name="gender" value="女">女</label>
+            </div>
+
+            <p class="width: 500px">
+                <label>兴趣方向：</label>
+                <label><input class="select" type="checkbox" name="interest" value="HTML">HTML</label>
+                <label><input class="select" type="checkbox" name="interest" value="CSS">CSS</label>
+                <label><input class="select" type="checkbox" name="interest" value="JavaScript">JavaScript</label>
+            </p>
+
+            <p>
+                <label for="class">班级：</label>
+                <select id="class" name="class" required>
+                    <option value="">请选择</option>
+                    <option value="前端1班">前端1班</option>
+                    <option value="前端2班">前端2班</option>
+                </select>
+            </p>
+
+            <p>
+                <label>报名日期：</label>
+                <label><input type="date" name="enrollment-date"></label>
+            </p>
+
+            <p>
+                <label>上传头像：</label>
+                <label class="avatar"><input type="file" name="avatar" accept="image/*"></label>
+            </p>
+
+            <p>
+                <label for="remark">备注：</label>
+                <textarea id="remark" name="remark" rows="4" cols="40" placeholder="请输入备注信息"></textarea>
+            </p>
+
+            <hr>
+
+            <button type="submit">提交</button>
+            <button type="reset">重置</button>
+        </form>
+    </body>
+</html>
