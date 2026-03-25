@@ -1,0 +1,46 @@
+body {
+    background: #309BE6;
+}
+
+.container {
+    width: 900px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    text-align: flex-start;
+    position: relative;
+    left: -55px;
+    top: 70px;
+    color: #FFC31B;
+}
+
+.cards {
+    width: 400px;
+    margin: 50px auto;
+    border:2px dashed #E4332A;
+    background: #309BE6;
+}
+
+
+.card {
+    background: #25C103;
+    color: #FFE624;
+    padding: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-start;
+    justify-items: auto;
+}
+
+.card.top {
+    margin-bottom: 5px;
+}
+
+img {
+    width: 25%;
+    margin: 10px;
+}
