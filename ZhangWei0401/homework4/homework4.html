@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>毕业证姓名替换器</title>
+    <link rel="stylesheet" href="homework4.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="tool-box">
+        <h2>毕业证姓名替换器</h2>
+        <div class="input-group">
+            <input type="text" id="nameInput" placeholder="输入姓名" value="李四">
+            <button onclick="replaceName()">替换毕业证姓名</button>
+            <button class="reset" onclick="resetName()">恢复原姓名</button>
+        </div>
+
+        <p class="desc">
+            说明：输入姓名后点击按钮，会把毕业证中所有“张三”替换为你输入的姓名。
+        </p>
+    </div>
+
+    <div class="certificate">
+        <h1>毕业证书</h1>
+        <p class="en">Certificate of Graduation</p>
+
+        <p class="content">
+            兹证明 <span class="name">张三</span> 同学在本校完成全部课程学习，成绩合格，准予毕业。特发此证，以资鼓励。
+        </p>
+
+        <p class="content">
+            经学校审核，确认 <span class="name">张三</span> 同学已达到毕业要求，并具备相应专业知识与实践能力。
+        </p>
+
+        <div class="footer">
+            <span>颁发单位：萌萌学院</span>
+            <span>日期：2026 年 4 月 1 日</span>
+        </div>
+    </div>
+
+</div>
+
+<script src="homework4.js"></script>
+</body>
+</html>

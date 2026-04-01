@@ -1,0 +1,51 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+    background: #F6F7FB;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    width: 450px;
+    height: 200px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin: 0px;
+    margin-top: 10px;
+    height: 40px;
+    align-self: flex-start;
+    padding-left: 20px;
+}
+
+input {
+    align-self: center;
+    padding: 5px;
+    width: 90%;
+    height: 30px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.greet-button {
+    background: rgb(38, 99,235);
+    color: white;
+    align-self: center;
+    padding: 5px;
+    width: 90%;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+}

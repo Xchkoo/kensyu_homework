@@ -1,0 +1,102 @@
+JS选择题
+在 HTML 中引入外部 JavaScript 文件，正确写法是（ ）。
+A. <script href="js/script.js"></script>
+B. <script src="js/script.js" defer></script>
+C. <javascript src="js/script.js"></javascript>
+D. <link rel="js" href="js/script.js">
+获取 `id="colorPicker"` 元素，最常用的是（ ）。
+A. document.getElementById("colorPicker")
+B. document.query("#colorPicker")
+C. document.pick("#colorPicker")
+D. window.getNode("colorPicker")
+使用 `querySelector` 获取 `id="colorText"`，正确写法是（ ）。
+A. document.querySelector("colorText")
+B. document.querySelector("#colorText")
+C. document.querySelector(".colorText")（已知是 id）
+D. querySelector("#colorText")（无 document）
+读取颜色选择器当前值，正确属性是（ ）。
+A. color.text
+B. color.data
+C. color.value
+D. color.innerHTML
+把段落文字改为“カラーコード：”，应使用（ ）。
+A. element.textContent = "カラーコード："
+B. element.value = "カラーコード："（p 标签）
+C. element.style = "カラーコード："
+D. element.src = "カラーコード："
+改变网页背景色为当前选中颜色，正确的是（ ）。
+A. document.background = color.value
+B. document.body.style.backgroundColor = color.value
+C. body.color = color.value
+D. window.style.background = color.value
+当颜色选择器变化时触发函数，事件类型应使用（ ）。
+A. submit
+B. input
+C. hover
+D. load
+绑定事件的正确写法是（ ）。
+A. color.on("input", colorBg)
+B. color.addEventListener("input", colorBg)
+C. color.bind("input", colorBg)
+D. addEventListener(color, "input", colorBg)
+下列模板字符串写法正确的是（ ）。
+A. "カラーコード: ${color.value}"
+B. 'カラーコード: ${color.value}'
+C. `カラーコード: ${color.value}`
+D. /カラーコード: ${color.value}/
+`if (color.value === '#ffffff')` 中 `===` 表示（ ）。
+A. 赋值
+B. 仅比较值
+C. 严格相等比较（值和类型）
+D. 不相等
+下面关于注释的说法正确的是（ ）。
+A. `//` 可写单行注释
+B. `##` 可写单行注释
+C. `--` 可写单行注释
+D. HTML 注释可直接替代 JS 注释
+关于“内部 JS”和“外部 JS”，正确的是（ ）。
+A. 外部 JS 更利于复用与维护
+B. 内部 JS 一定比外部 JS 快
+C. 内部 JS 必须写在 body 外
+D. 外部 JS 不能访问 DOM
+`const` 与 `let` 的正确理解是（ ）。
+A. 两者完全一样
+B. `const` 声明后必须赋初值，且不能重新赋值
+C. `let` 不能修改值
+D. `const` 只能用于字符串
+将“颜色处理逻辑”封装成函数的主要好处是（ ）。
+A. 代码更长
+B. 代码可复用、结构更清晰
+C. 只能执行一次
+D. 无法绑定事件
+页面加载完成后立即显示当前颜色代码，合理做法是（ ）。
+A. 只写事件监听，不主动调用函数
+B. 页面加载时调用一次颜色处理函数
+C. 只依赖 CSS 自动生成
+D. 用 alert 显示即可
+关于 DOM 的说法正确的是（ ）。
+A. DOM 只能读，不能改
+B. DOM 是浏览器中页面结构对象模型，可被 JS 操作
+C. DOM 只用于 CSS
+D. DOM 与 HTML 没有关系
+颜色选择器 `
+` 返回值通常格式是（ ）。
+A. `rgb(0,0,0)`
+B. `black`
+C. `#000000` 这种十六进制字符串
+D. `0,0,0`
+若想在颜色为黑色时额外显示 `(black)`，应使用（ ）。
+A. switch 或 if 条件判断
+B. 只能写死在 HTML 里
+C. 只能用 CSS 伪类
+D. 不能实现
+将脚本标签加上 `defer` 的主要作用是（ ）。
+A. 阻塞 HTML 解析直到脚本执行完
+B. 延迟脚本到 HTML 解析后再执行
+C. 让脚本永远不执行
+D. 强制脚本在 CSS 前执行
+下列哪项最符合“交互式颜色选择器页面”的实现思路（ ）。
+A. 只写 HTML，不写 JS
+B. JS 获取颜色值 → 修改背景色 → 更新文本
+C. 每次选色都刷新整个页面
+D. 仅在控制台输出，不改页面
