@@ -1,0 +1,42 @@
+body {
+  background: #f5f6f8;
+  font-family: sans-serif;
+}
+
+.card {
+  width: 600px;
+  margin: 100px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border: 1px solid rgba(213,217,223);
+}
+
+input {
+  width: 95%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  margin-top: 10px;
+}
+
+.bar {
+  height: 10px;
+  background: #eee;
+  border-radius: 5px;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+#bar-inner {
+  height: 100%;
+  width: 0%;
+  background: red;
+  transition: all 0.3s;
+}
+
+#strength-text {
+  font-weight: bold;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <title>密码强度检测</title>
+        <link rel="stylesheet" href="css/homework3.css" />
+    <script src="js/homework3.js" defer></script>
+    </head>
+    <body>
+        <div class="card">
+            <h2>密码强度检测</h2>
+            <p class="desc">输入密码后实时显示强度：弱 / 中 / 强（颜色 + 条形图）</p>
+            <input id="password" type="password" placeholder="请输入密码" />
+
+            <div class="bar">
+                <div id="bar-inner"></div>
+            </div>
+
+            <p id="strength-text">当前强度：-</p>
+            <p class="tip">建议：长度≥8，包含大小写字母、数字、特殊字符</p>
+        </div>
+    </body>
+</html>
