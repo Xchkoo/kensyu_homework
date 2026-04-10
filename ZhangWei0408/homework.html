@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菜单管理系统</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="admin-panel">
+        <h2>新增菜单</h2>
+        <div class="form-row">
+            <div class="input-group">
+                <label>名称</label>
+                <input type="text" id="itemName" placeholder="例如：ブルーベリー">
+            </div>
+            <div class="input-group">
+                <label>价格</label>
+                <input type="text" id="itemPrice" placeholder="例如：480円">
+            </div>
+            <div class="input-group">
+                <label>图片 URL</label>
+                <input type="text" id="itemUrl" placeholder="https://...">
+            </div>
+        </div>
+        <button class="btn-green" onclick="addItem()">新增菜单项</button>
+    </header>
+
+    <div class="edit-panel">
+        <h2>菜单内容编辑</h2>
+        <div class="form-row">
+            <div class="input-group select-group">
+                <label >选择菜单项</label>
+                <select id="editSelect"></select>
+            </div>
+            <div class="input-group">
+                <label>名称</label>
+                <input type="text" id="editName">
+            </div>
+            <div class="input-group">
+                <label>价格</label>
+                <input type="text" id="editPrice">
+            </div>
+        </div>
+        <button class="btn-blue" onclick="updateItem()">保存修改</button>
+    </div>
+
+    <main class="container">
+        <section class="menu-section">
+            <h1>菜单</h1>
+            <div class="menu-grid" id="menuGrid">
+                <!-- 菜单项将通过 JavaScript 动态添加到这里 -->
+            </div>
+        </section>
+
+        <aside class="cart-section">
+            <h2>购物车</h2>
+            <div class="cart-box">
+                <p>购物车内暂无商品</p>
+            </div>
+        </aside>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
