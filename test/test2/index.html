@@ -1,71 +1,63 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>学生情報登録</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>学生情報登録</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>学生情報登録</h2>
+            <div class="desc">
+                <p>登録する情報を入力し、提出ボタンをクリックしてください。<br>
+                「×」印は任意項目です。</p>
+                <p>本人連絡先は、日本国内の住所、日本語で登録してください。海外住所を登録することはできません。</p>
+            </div>
+            <form id="studentForm">
+                <fieldset>
+                    <legend>本人連絡先</legend>
+                
+                    <label>所属</label>
+                    <input type="text">
 
-<body>
+                    <label>学籍番号</label>
+                    <input type="text">
 
-<div class="container">
+                    <label>氏名</label>
+                    <input type="text">
 
-  <h2>学生情報登録</h2>
+                    <label>氏名カナ</label>
+                    <input type="text">
 
-  <div class="desc">
-    <p>登録する情報を入力し、提出ボタンをクリックしてください。<br>
-        「×」印は任意項目です。</p>
-    <p>本人連絡先は、日本国内の住所、日本語で登録してください。海外住所を登録することはできません。</p>
-  </div>
+                    <label>氏名（英字）</label>
+                    <input type="text">
 
-  <form id="studentForm">
+                    <!-- 郵便番号 -->
+                    <label>郵便番号</label>
+                    <input type="text" id="zip">
+                    <div class="msg" id="zipMsg"></div>
 
-    <fieldset>
-      <legend>本人連絡先</legend>
+                    <!-- 電話番号 -->
+                    <label>電話番号</label>
+                    <input type="text" id="tel">
+                    <div class="msg" id="telMsg"></div>
 
-      <label>所属</label>
-      <input type="text">
+                    <!-- 携帯 -->
+                    <label>携帯電話番号</label>
+                    <input type="text" id="mobile">
+                    <div class="msg" id="mobileMsg"></div>
 
-      <label>学籍番号</label>
-      <input type="text">
+                    <label>大学メールアドレス</label>
+                    <input type="email">
 
-      <label>氏名</label>
-      <input type="text">
+                    <label>個人メールアドレス</label>
+                    <input type="email">
 
-      <label>氏名カナ</label>
-      <input type="text">
-
-      <label>氏名（英字）</label>
-      <input type="text">
-
-      <!-- 郵便番号 -->
-      <label>郵便番号</label>
-      <input type="text" id="zip">
-      <div class="msg" id="zipMsg"></div>
-
-      <!-- 電話番号 -->
-      <label>電話番号</label>
-      <input type="text" id="tel">
-      <div class="msg" id="telMsg"></div>
-
-      <!-- 携帯 -->
-      <label>携帯電話番号</label>
-      <input type="text" id="mobile">
-      <div class="msg" id="mobileMsg"></div>
-
-      <label>大学メールアドレス</label>
-      <input type="email">
-
-      <label>個人メールアドレス</label>
-      <input type="email">
-
-    </fieldset>
-
-    <button type="submit">登録</button>
-
-  </form>
-
-</div>
-</body>
+                </fieldset>
+                <button type="submit">登録</button>
+            </form>
+        </div>
+    </body>
 </html>
