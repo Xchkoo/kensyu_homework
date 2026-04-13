@@ -1,0 +1,71 @@
+:root {
+    --green-color: rgba(59,117,62);
+    --background-color: rgba(249,249,249);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+.container {
+    width: 800px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: left;
+    color: var(--green-color);
+}
+
+.desc {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    background: var(--background-color);
+}
+
+legend {
+    font-weight: thin;
+    color: var(--green-color);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.msg {
+    font-size: 12px;
+    color: red;
+    height: 16px;
+}
+
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}

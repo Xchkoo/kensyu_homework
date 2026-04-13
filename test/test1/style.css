@@ -1,0 +1,77 @@
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.instructions {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+/* 表格样式 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+th {
+    font-size: 0.85rem;
+    font-weight: normal;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+td {
+    padding: 2px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* 按钮样式 */
+.btn-delete {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.footer-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-add {
+    background-color: #008000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-submit {
+    background-color: #e0e0e0;
+    color: #333;
+    border: 1px solid #999;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-add:hover { opacity: 0.8; }
+.btn-delete:hover { opacity: 0.8; }

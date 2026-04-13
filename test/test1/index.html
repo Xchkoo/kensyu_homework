@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>学生情報登録</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>学生情報登録</h1>
+    <div class="instructions">
+        <p>登録する情報を入力し、提出ボタンをクリックしてください。</p>
+        <p>「×」印は任意項目です。</p>
+    </div>
+    <form>
+        <table id="Table">
+            <thead>
+                <tr>
+                    <th>氏名（英字）</th>
+                    <th>郵便番号</th>
+                    <th>住所</th>
+                    <th>電話番号</th>
+                    <th>携帯電話番号</th>
+                    <th>個人メールアドレス</th>
+                    <th></th> </tr>
+            </thead>
+            <tbody id="TableBody">
+                <tr>
+                    <td><input type="text" name="name[]" placeholder="氏名（英字）" required></td>
+                    <td><input type="text" name="zipcode[]" placeholder="郵便番号" required></td>
+                    <td><input type="text" name="address[]" placeholder="住所" required></td>
+                    <td><input type="text" name="tel[]" placeholder="電話番号" required></td>
+                    <td><input type="text" name="mobile[]" placeholder="携帯電話番号" required></td>
+                    <td><input type="email" name="email[]" placeholder="個人メールアドレス" required></td>
+                    <td><button type="button" class="btn-delete">削除</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="footer-actions">
+            <button type="button" class="btn-add" id="addRowBtn">新規追加</button>
+            <button type="submit" class="btn-submit">登録</button>
+        </div>
+    </form>
+</body>
+</html>

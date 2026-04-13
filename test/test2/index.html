@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>学生情報登録</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h2>学生情報登録</h2>
+
+  <div class="desc">
+    <p>登録する情報を入力し、提出ボタンをクリックしてください。<br>
+        「×」印は任意項目です。</p>
+    <p>本人連絡先は、日本国内の住所、日本語で登録してください。海外住所を登録することはできません。</p>
+  </div>
+
+  <form id="studentForm">
+
+    <fieldset>
+      <legend>本人連絡先</legend>
+
+      <label>所属</label>
+      <input type="text">
+
+      <label>学籍番号</label>
+      <input type="text">
+
+      <label>氏名</label>
+      <input type="text">
+
+      <label>氏名カナ</label>
+      <input type="text">
+
+      <label>氏名（英字）</label>
+      <input type="text">
+
+      <!-- 郵便番号 -->
+      <label>郵便番号</label>
+      <input type="text" id="zip">
+      <div class="msg" id="zipMsg"></div>
+
+      <!-- 電話番号 -->
+      <label>電話番号</label>
+      <input type="text" id="tel">
+      <div class="msg" id="telMsg"></div>
+
+      <!-- 携帯 -->
+      <label>携帯電話番号</label>
+      <input type="text" id="mobile">
+      <div class="msg" id="mobileMsg"></div>
+
+      <label>大学メールアドレス</label>
+      <input type="email">
+
+      <label>個人メールアドレス</label>
+      <input type="email">
+
+    </fieldset>
+
+    <button type="submit">登録</button>
+
+  </form>
+
+</div>
+</body>
+</html>
